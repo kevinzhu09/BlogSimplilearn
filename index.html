@@ -10,30 +10,36 @@
 
 </head>
 
-<body>
+<body class="bg-info">
     <div class="container">
-    <div class="row">
-        <h2>Blog</h2>
+    <div class="row col justify-content-center">
+        <h2>Kevin's Blog</h2>   
     </div>
+    <div class="row col justify-content-center">
+        <h5>Enter the information of your blog and then click "Add New Blog"!</h5>
+        
+    </div>
+    
+
     <div class="row">
 
 
-            <div class="form-group">
+            <div class="form-group col">
               <label for="myTitle">Title</label>
               <input type="text" class="form-control" id="myTitle">
             </div>
 
-            <div class="form-group">
+            <div class="form-group col">
                 <label for="myDate">Date</label>
                 <input type="text" class="form-control" id="myDate">
             </div>
 
-            <div class="form-group">
+            <div class="form-group col">
                 <label for="myAuthor">Author</label>
                 <input type="text" class="form-control" id="myAuthor">
             </div>
 
-            <div class="form-group">
+            <div class="form-group col">
                 <label for="myDescription">Description</label>
                 <input type="text" class="form-control" id="myDescription">
             </div>
@@ -46,6 +52,11 @@
 
     <div class="row">
         <button onclick="addBlog()" class="btn btn-primary">Add New Blog</button>
+    </div>
+
+    
+    <div class="row col justify-content-center">
+        <h2>Current blog posts:</h2>   
     </div>
 
     <div class="row">
@@ -78,7 +89,7 @@
 </div>
 
     <div class="row">
-    <button onclick="removeAll()" class="btn btn-danger">Clear All Blog Posts</button>
+    <button onclick="removeAll()" class="btn btn-danger">Delete All Blog Posts</button>
     </div>
     
 </div>
