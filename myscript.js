@@ -50,12 +50,13 @@ function addBlog() {
         blogList.appendChild(dateElement);
         blogList.appendChild(authorElement);
         blogList.appendChild(descriptionElement);
-
+        
         document.getElementById('myList').appendChild(blog);
         document.getElementById('myTitle').value = '';
         document.getElementById('myDate').value = '';
         document.getElementById('myAuthor').value = '';
         document.getElementById('myDescription').value = '';
+        return false;
     }
 
     // var span = document.createElement('span');      // <span></span>
