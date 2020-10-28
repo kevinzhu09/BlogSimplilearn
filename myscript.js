@@ -7,7 +7,7 @@ function addBlog() {
     var authorValue = document.getElementById('myAuthor').value;
     var authorText = document.createTextNode('Author: ' + authorValue);
     var descriptionValue = document.getElementById('myDescription').value;
-    var descriptionText = document.createTextNode('Description: ' + descriptionValue);
+    var descriptionText = document.createTextNode('Contents: ' + descriptionValue);
 
     if (titleValue === '' || dateValue === '' || authorValue === '' || descriptionValue === '') {
         alert('You must type something into all four fields.')
@@ -36,10 +36,4 @@ function addBlog() {
         return false;
     }
 
-}
-
-function removeAll() {
-    // var list = document.getElementById('myList');
-    var list = document.getElementsByTagName('ul');
-    list[0].innerHTML = "";
 }
