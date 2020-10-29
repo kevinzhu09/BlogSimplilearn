@@ -27,6 +27,12 @@ function addBlog() {
         blogList.appendChild(dateElement);
         blogList.appendChild(authorElement);
         blogList.appendChild(descriptionElement);
+
+        blogList.className += ' list-group';
+        titleElement.className += ' list-group-item';
+        dateElement.className += ' list-group-item';
+        authorElement.className += ' list-group-item';
+        descriptionElement.className += ' list-group-item';
         
         document.getElementById('myList').appendChild(blog);
         document.getElementById('myTitle').value = '';
